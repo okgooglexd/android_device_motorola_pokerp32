@@ -41,7 +41,7 @@
 /dev/block/platform/bootdevice/by-name/vendor          /vendor                ext4    ro wait,recoveryonly
 
 # Userdata and Cache Point
-/dev/block/platform/bootdevice/by-name/userdata        /data                  ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic wait,check,quota,reservedsize=128M,formattable,resize,fileencryption=aes-256-xts
+/dev/block/platform/bootdevice/by-name/userdata        /data                  ext4    noatime,nosuid,nodev,noauto_da_alloc,errors=panic latemount,wait,check,quota,reservedsize=128M,formattable,resize,fileencryption=aes-256-xts
 /dev/block/platform/bootdevice/by-name/cache           /cache                 ext4    noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
 
 # ETC Point
