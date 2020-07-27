@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/idc/AVRCP.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/AVRCP.idc
 
+# ImsInit hack
+PRODUCT_PACKAGES += \
+    ImsInit
+    
 # Init
 PRODUCT_PACKAGES += \
     init.mt6765.rc \
