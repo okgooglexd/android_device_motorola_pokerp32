@@ -82,6 +82,10 @@
          provisioning, availability etc -->
      <bool name="config_carrier_wfc_ims_available">false</bool>
 
+    <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
+    <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
+>>>>>>> 4b93196 (v7101o: Add TetheringOverlay)
+
     <!-- String indicating the package name of the device ImsService implementation for MMTEL. -->
     <string name="config_ims_mmtel_package" translatable="false">com.mediatek.ims</string>
 
