@@ -23,6 +23,15 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_PACKAGES += \
     libvulkan
 
+# Features
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.controls.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.controls.xml
+
+# FM
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
