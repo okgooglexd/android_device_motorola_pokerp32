@@ -39,16 +39,13 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0_system \
-    android.hidl.manager@1.0_system
+    android.hidl.manager@1.0_system \
+    libhidltransport \
+    libhwbinder
 
 # IDC
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/idc/AVRCP.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/AVRCP.idc
-
-# HIDL
-PRODUCT_PACKAGES += \
-    libhidltransport \
-    libhwbinder
 
 # ImsInit hack
 PRODUCT_PACKAGES += \
@@ -63,10 +60,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/mtk-kpd:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
-
 # Pre-opt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
@@ -76,20 +69,6 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
-
-# Radio Jar
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/permissions/,$(TARGET_COPY_OUT_VENDOR)/etc/permissons)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
