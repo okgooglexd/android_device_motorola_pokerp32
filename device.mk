@@ -23,10 +23,6 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1560
 TARGET_SCREEN_WIDTH := 720
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 # Display
 PRODUCT_PACKAGES += \
     libvulkan
