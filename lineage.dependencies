@@ -1,0 +1,8 @@
+[
+  {
+    "repository" : "okgooglexd/vendor_motorola_pokerp",
+    "target_path": "vendor/motorola/pokerp",
+    "remote"     : "github",
+    "revision"   : "eleven"
+  }
+]
