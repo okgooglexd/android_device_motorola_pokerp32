@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/motorola/pokerp
+TARGET_COPY_OUT_PRODUCT := system/product
 
 # APEX
 TARGET_FLATTEN_APEX := true
