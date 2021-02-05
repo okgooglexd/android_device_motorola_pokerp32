@@ -10,15 +10,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from pokerp device
 $(call inherit-product, device/motorola/pokerp/device.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 $(call inherit-product, device/motorola/pokerp/mtk-hals.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_pokerp
+PRODUCT_NAME := aosp_pokerp
 PRODUCT_DEVICE := pokerp
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Motorola Moto E6 Plus
-PRODUCT_MANUFACTURER := Teracube
+PRODUCT_MANUFACTURER := motorola
 
 # Fingerprint
 BUILD_FINGERPRINT := motorola/pokerp/pokerp:9/PTA29.307/307:user/release-keys
