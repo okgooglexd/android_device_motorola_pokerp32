@@ -97,8 +97,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH) \
-    hardware/mediatek
+    $(DEVICE_PATH)
 
 # System-as-Root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
