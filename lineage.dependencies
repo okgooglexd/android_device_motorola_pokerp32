@@ -17,4 +17,11 @@
    "remote"      : "pixel",
    "branch"      : "eleven"
  }
+ },
+ {
+   "repository"  : "TheMalachite/hardware_mediatek",
+   "target_path" : "hardware/mediatek",
+   "remote"      : "github",
+   "branch"      : "eleven"
+ }
 ]
