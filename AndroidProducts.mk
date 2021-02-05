@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pokerp.mk
+    $(LOCAL_DIR)/aosp_pokerp.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_pokerp-user \
+    aosp_pokerp-userdebug \
+    aosp_pokerp-eng
