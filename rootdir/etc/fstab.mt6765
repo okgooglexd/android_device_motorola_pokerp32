@@ -81,6 +81,3 @@
 # SD-Card/USB-OTG Point
 /devices/platform/externdevice*                         auto                   auto    defaults                                           voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/platform/mt_usb*                               auto                   vfat    defaults                                           voldmanaged=usbotg:auto
-
-# FRP Point
-/dev/block/platform/bootdevice/by-name/frp             /persist                emmc    defaults
